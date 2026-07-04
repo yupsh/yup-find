@@ -1,20 +1,9 @@
-# yup-find
+[![actions](https://github.com/yupsh/yup-find/actions/workflows/actions.yml/badge.svg)](https://github.com/yupsh/yup-find/actions/workflows/actions.yml)
+[![ci](https://github.com/yupsh/yup-find/actions/workflows/ci.yml/badge.svg)](https://github.com/yupsh/yup-find/actions/workflows/ci.yml)
+[![dockerfiles](https://github.com/yupsh/yup-find/actions/workflows/dockerfiles.yml/badge.svg)](https://github.com/yupsh/yup-find/actions/workflows/dockerfiles.yml)
+[![docs](https://github.com/yupsh/yup-find/actions/workflows/docs.yml/badge.svg)](https://github.com/yupsh/yup-find/actions/workflows/docs.yml)
+[![go](https://github.com/yupsh/yup-find/actions/workflows/go.yml/badge.svg)](https://github.com/yupsh/yup-find/actions/workflows/go.yml)
+[![release](https://github.com/yupsh/yup-find/actions/workflows/release.yml/badge.svg)](https://github.com/yupsh/yup-find/actions/workflows/release.yml)
+[![shell](https://github.com/yupsh/yup-find/actions/workflows/shell.yml/badge.svg)](https://github.com/yupsh/yup-find/actions/workflows/shell.yml)
 
-```
-NAME:
-   find - search for files in a directory hierarchy
-
-USAGE:
-   find [PATH] [OPTIONS]
-
-   search for files in the directory hierarchy rooted at PATH (default: .).
-
-VERSION:
-   dev
-
-GLOBAL OPTIONS:
-   --type string   file is of type TYPE (f=file, d=directory)
-   --maxdepth int  descend at most LEVELS (a non-negative integer) levels (default: 0)
-   --help, -h      show help
-   --version       print version information and exit
-```
+[docs](https://yupsh.github.io/docs.repl/)
