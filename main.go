@@ -39,8 +39,18 @@ var spec = clix.Spec{
 // state into another (which IsSet reads).
 func flags() []urf.Flag {
 	return []urf.Flag{
-		&urf.StringFlag{Name: flagType, Usage: "file is of type TYPE (f=file, d=directory)"},
-		&urf.IntFlag{Name: flagMaxDepth, Usage: "descend at most LEVELS (a non-negative integer) levels"},
+		&urf.StringFlag{
+			Name:    flagType,
+			Usage:   "file is of type TYPE (f=file, d=directory)",
+			Sources: urf.EnvVars("YUP_FIND_TYPE"),
+			Value:   "",
+		},
+		&urf.IntFlag{
+			Name:    flagMaxDepth,
+			Usage:   "descend at most LEVELS (a non-negative integer) levels",
+			Sources: urf.EnvVars("YUP_FIND_MAXDEPTH"),
+			Value:   0,
+		},
 	}
 }
 
